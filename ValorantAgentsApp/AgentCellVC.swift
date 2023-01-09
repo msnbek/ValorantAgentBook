@@ -8,6 +8,11 @@
 import UIKit
 
 class AgentCellVC: UITableViewCell {
+    
+    @IBOutlet var agentImageview: UIImageView!
+    
+    @IBOutlet var agentNameLAbel: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

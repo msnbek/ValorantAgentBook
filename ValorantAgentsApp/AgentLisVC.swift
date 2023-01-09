@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AgentLisVC: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        

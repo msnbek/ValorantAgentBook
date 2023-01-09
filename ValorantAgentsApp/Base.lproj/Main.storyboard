@@ -11,7 +11,7 @@
         <!--Agents-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ValorantAgentsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AgentLisVC" customModule="ValorantAgentsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="87" id="aej-BF-edV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="87" id="aej-BF-edV" customClass="AgentCellVC" customModule="ValorantAgentsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aej-BF-edV" id="MxE-Wj-Htg">
@@ -40,6 +40,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="agentImageview" destination="HVU-Vr-SBV" id="JWL-Rb-xQ4"/>
+                                            <outlet property="agentNameLAbel" destination="jb9-JC-NKw" id="HxQ-E6-xAu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -55,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Agents" largeTitleDisplayMode="always" id="cLJ-xK-mDD"/>
                     <connections>
+                        <outlet property="tableView" destination="djp-1A-6xd" id="GgK-y7-ib6"/>
                         <segue destination="57g-Qu-swc" kind="show" id="xJO-gx-gwz"/>
                     </connections>
                 </viewController>
@@ -65,7 +70,7 @@
         <!--Agent Name-->
         <scene sceneID="dSB-l3-5as">
             <objects>
-                <viewController id="57g-Qu-swc" sceneMemberID="viewController">
+                <viewController id="57g-Qu-swc" customClass="AgentDetailVC" customModule="ValorantAgentsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WLb-Cs-beF">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +88,7 @@
                                 <rect key="frame" x="0.0" y="424" width="390" height="420"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="71" id="kiq-fD-aso">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="71" id="kiq-fD-aso" customClass="AgentDetailsCellVC" customModule="ValorantAgentsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kiq-fD-aso" id="yOf-EL-Y8o">
@@ -103,6 +108,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="skillImageView" destination="sN5-WZ-VgS" id="jiX-Zy-nH4"/>
+                                            <outlet property="skillNameLabel" destination="qe9-y1-aCb" id="njh-sy-gsS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -136,6 +145,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Agent Name" id="Y9d-HL-1hS"/>
+                    <connections>
+                        <outlet property="characterImageView" destination="ylu-uJ-Qf7" id="PiB-Ay-Fog"/>
+                        <outlet property="flagImageView" destination="Zgs-sq-koJ" id="CrN-LQ-zKr"/>
+                        <outlet property="tableView" destination="QL9-r5-u41" id="ZYi-uh-xLH"/>
+                        <outlet property="typeLabel" destination="KvT-FO-Gp7" id="Hnl-qu-nfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yv8-fc-dPE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

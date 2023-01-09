@@ -9,6 +9,8 @@ import UIKit
 
 class AgentDetailsCellVC: UITableViewCell {
 
+    @IBOutlet var skillNameLabel: UILabel!
+    @IBOutlet var skillImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
