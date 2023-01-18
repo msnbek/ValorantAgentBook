@@ -15,7 +15,7 @@ struct Agent: Hashable{
     let type: AgentType
     let origin: String
     let abilities: [String]
-   let iconAgent : UIImage
+    let iconAgent : UIImage
     let agentFlagImage : UIImage
 }
 

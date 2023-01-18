@@ -57,7 +57,7 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-        
+        performSegue(withIdentifier: "toSecondVC", sender: nil)
         
         
     }
@@ -66,7 +66,15 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let destinationVC = segue.destination as! AgentDetailVC
-        destinationVC.
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let agent = agentsReference[indexPath.row]
+            destinationVC.choosenFlagImage = agent.agentFlagImage
+            destinationVC.choosenAgentIconImage = agent.iconAgent
+            destinationVC.choosenAgentType = agent.type.rawValue
+            destinationVC.choosenAgentName = agent.name
+            destinationVC.choosenAgentAbilities = agent.abilities
+        }
+    
         
     }
 

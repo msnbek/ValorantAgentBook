@@ -73,7 +73,7 @@ struct ValorantReferenceApp {
         Agent(name: "KAYO", type: .initiator, origin: "AT Earth", abilities: ["FRAG/ment",
                                                                               "FLASH/drive",
                                                                               "ZERO/point",
-                                                                              "NULL/cmd"],iconAgent: UIImage(named: "KAYO_Icon")!, agentFlagImage: UIImage(named: "Kayo")!),
+                                                                              "NULL/cmd"],iconAgent: UIImage(named: "KAYO_Icon")!, agentFlagImage: UIImage(named: "kayoFlag")!),
         Agent(name: "Chamber", type: .sentinel, origin: "France", abilities: ["Trademark",
                                                                               "Headhunter",
                                                                               "Rendezvous",
