@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		ED6A3C6E296C7D19009D28D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C6D296C7D19009D28D4 /* AppDelegate.swift */; };
 		ED6A3C70296C7D19009D28D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C6F296C7D19009D28D4 /* SceneDelegate.swift */; };
-		ED6A3C72296C7D19009D28D4 /* AgentLisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C71296C7D19009D28D4 /* AgentLisVC.swift */; };
+		ED6A3C72296C7D19009D28D4 /* AgentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C71296C7D19009D28D4 /* AgentListVC.swift */; };
 		ED6A3C75296C7D19009D28D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3C73296C7D19009D28D4 /* Main.storyboard */; };
 		ED6A3C77296C7D1B009D28D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3C76296C7D1B009D28D4 /* Assets.xcassets */; };
 		ED6A3C7A296C7D1B009D28D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A3C78296C7D1B009D28D4 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,14 @@
 		ED6A3C86296C835E009D28D4 /* AgentProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C85296C835E009D28D4 /* AgentProperties.swift */; };
 		ED6A3C88296C8383009D28D4 /* Agents.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C87296C8383009D28D4 /* Agents.swift */; };
 		ED6A3C8A296C849F009D28D4 /* AgentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */; };
+		ED6A3C8C296C9691009D28D4 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C8B296C9691009D28D4 /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED6A3C6A296C7D19009D28D4 /* ValorantAgentsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValorantAgentsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6A3C6D296C7D19009D28D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED6A3C6F296C7D19009D28D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED6A3C71296C7D19009D28D4 /* AgentLisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLisVC.swift; sourceTree = "<group>"; };
+		ED6A3C71296C7D19009D28D4 /* AgentListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentListVC.swift; sourceTree = "<group>"; };
 		ED6A3C74296C7D19009D28D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED6A3C76296C7D1B009D28D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED6A3C79296C7D1B009D28D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		ED6A3C85296C835E009D28D4 /* AgentProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentProperties.swift; sourceTree = "<group>"; };
 		ED6A3C87296C8383009D28D4 /* Agents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agents.swift; sourceTree = "<group>"; };
 		ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailVC.swift; sourceTree = "<group>"; };
+		ED6A3C8B296C9691009D28D4 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,13 @@
 			children = (
 				ED6A3C6D296C7D19009D28D4 /* AppDelegate.swift */,
 				ED6A3C6F296C7D19009D28D4 /* SceneDelegate.swift */,
-				ED6A3C71296C7D19009D28D4 /* AgentLisVC.swift */,
-				ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */,
+				ED6A3C71296C7D19009D28D4 /* AgentListVC.swift */,
 				ED6A3C81296C8023009D28D4 /* AgentCellVC.swift */,
+				ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */,
 				ED6A3C83296C8036009D28D4 /* AgentDetailsCellVC.swift */,
 				ED6A3C85296C835E009D28D4 /* AgentProperties.swift */,
 				ED6A3C87296C8383009D28D4 /* Agents.swift */,
+				ED6A3C8B296C9691009D28D4 /* Images.swift */,
 				ED6A3C73296C7D19009D28D4 /* Main.storyboard */,
 				ED6A3C76296C7D1B009D28D4 /* Assets.xcassets */,
 				ED6A3C78296C7D1B009D28D4 /* LaunchScreen.storyboard */,
@@ -155,8 +158,9 @@
 			files = (
 				ED6A3C82296C8023009D28D4 /* AgentCellVC.swift in Sources */,
 				ED6A3C8A296C849F009D28D4 /* AgentDetailVC.swift in Sources */,
-				ED6A3C72296C7D19009D28D4 /* AgentLisVC.swift in Sources */,
+				ED6A3C72296C7D19009D28D4 /* AgentListVC.swift in Sources */,
 				ED6A3C86296C835E009D28D4 /* AgentProperties.swift in Sources */,
+				ED6A3C8C296C9691009D28D4 /* Images.swift in Sources */,
 				ED6A3C6E296C7D19009D28D4 /* AppDelegate.swift in Sources */,
 				ED6A3C88296C8383009D28D4 /* Agents.swift in Sources */,
 				ED6A3C84296C8036009D28D4 /* AgentDetailsCellVC.swift in Sources */,

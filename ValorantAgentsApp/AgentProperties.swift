@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
-struct Agent:Hashable{
+struct Agent: Hashable{
+  
+    
     let name: String
     let type: AgentType
     let origin: String
     let abilities: [String]
+   let iconAgent : UIImage
+    let agentFlagImage : UIImage
 }
 
 enum AgentType:String{

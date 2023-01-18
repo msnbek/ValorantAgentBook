@@ -11,38 +11,46 @@
         <!--Agents-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AgentLisVC" customModule="ValorantAgentsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AgentListVC" customModule="ValorantAgentsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="djp-1A-6xd">
-                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="djp-1A-6xd">
+                                <rect key="frame" x="0.0" y="132" width="390" height="712"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="87" id="aej-BF-edV" customClass="AgentCellVC" customModule="ValorantAgentsApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="87"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell1" rowHeight="268" id="aej-BF-edV" customClass="AgentCellVC" customModule="ValorantAgentsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="268"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aej-BF-edV" id="MxE-Wj-Htg">
-                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="87"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="359.66666666666669" height="268"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HVU-Vr-SBV">
-                                                    <rect key="frame" x="20" y="1" width="95" height="86"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yvq-cu-whh">
+                                                    <rect key="frame" x="0.0" y="37" width="167" height="195"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="167" id="66z-Gr-QiD"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb9-JC-NKw">
-                                                    <rect key="frame" x="123" y="5" width="222" height="76"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-7c-Yz1">
+                                                    <rect key="frame" x="221" y="89" width="130" height="91"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yvq-cu-whh" firstAttribute="top" secondItem="MxE-Wj-Htg" secondAttribute="topMargin" constant="-11" id="3va-S0-avQ"/>
+                                                <constraint firstItem="n6v-7c-Yz1" firstAttribute="leading" secondItem="yvq-cu-whh" secondAttribute="trailing" constant="44" id="IsC-rj-KJX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yvq-cu-whh" secondAttribute="bottom" constant="-8" id="Q2Z-LA-DI9"/>
+                                                <constraint firstItem="yvq-cu-whh" firstAttribute="centerY" secondItem="n6v-7c-Yz1" secondAttribute="centerY" id="TIf-Qg-zy3"/>
+                                                <constraint firstItem="yvq-cu-whh" firstAttribute="leading" secondItem="MxE-Wj-Htg" secondAttribute="leadingMargin" constant="-10" id="iyX-C4-vmd"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="agentImageview" destination="HVU-Vr-SBV" id="JWL-Rb-xQ4"/>
-                                            <outlet property="agentNameLAbel" destination="jb9-JC-NKw" id="HxQ-E6-xAu"/>
+                                            <outlet property="agentImageview" destination="yvq-cu-whh" id="IJ4-rI-sy8"/>
+                                            <outlet property="agentNameLAbel" destination="n6v-7c-Yz1" id="rzA-gA-G7V"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -51,16 +59,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="djp-1A-6xd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Qc-qg-W2y"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="djp-1A-6xd" secondAttribute="bottom" constant="-34" id="7bZ-gO-Aek"/>
-                            <constraint firstItem="djp-1A-6xd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KCs-t4-X5n"/>
-                            <constraint firstItem="djp-1A-6xd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pd3-g1-klo"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="djp-1A-6xd" secondAttribute="bottom" constant="-34" id="m0s-Qs-wFQ"/>
+                            <constraint firstItem="djp-1A-6xd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIR-Dd-hoT"/>
+                            <constraint firstItem="djp-1A-6xd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vZ5-As-kg1"/>
+                            <constraint firstItem="djp-1A-6xd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y4E-Lu-qJp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Agents" largeTitleDisplayMode="always" id="cLJ-xK-mDD"/>
                     <connections>
                         <outlet property="tableView" destination="djp-1A-6xd" id="GgK-y7-ib6"/>
-                        <segue destination="57g-Qu-swc" kind="show" id="xJO-gx-gwz"/>
+                        <segue destination="57g-Qu-swc" kind="show" identifier="toSecondVC" id="xJO-gx-gwz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -164,6 +172,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBy-xw-SgM">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="1" green="0.021991664229999999" blue="0.4877774446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                            <color key="textColor" red="1" green="0.093699708170000007" blue="0.29095126929999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
