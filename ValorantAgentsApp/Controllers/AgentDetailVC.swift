@@ -39,7 +39,6 @@ class AgentDetailVC: UIViewController {
         tableView.separatorStyle = .none
         agentTypeImageView.image = UIImage(named: "\(agentDetailVariables.choosenAgentType)")
         print(agentDetailVariables.choosenAgentType)
-        
     }
     
 
