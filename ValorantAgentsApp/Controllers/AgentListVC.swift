@@ -75,12 +75,9 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
             destinationVC.choosenAgentAbilities = agent.abilities
             destinationVC.agentDetailVariables.choosenAgentAbilitiesImages = agent.agentAbilitiesImage
         }
-    
         
     }
 
-
-  
 
 }
 
