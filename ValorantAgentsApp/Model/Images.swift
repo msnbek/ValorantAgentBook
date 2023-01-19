@@ -152,155 +152,155 @@ struct AgentAbilitiesImages {
     
     var abilitiesAstra = [
         
-        UIImage(named: "Gravity_Well"),
-        UIImage(named: "Nova_Pulse"),
-        UIImage(named: "Nebula-Dissipate"),
-        UIImage(named: "Astral_Form")
+        UIImage(named: "Gravity_Well")!,
+        UIImage(named: "Nova_Pulse")!,
+        UIImage(named: "Nebula-Dissipate")!,
+        UIImage(named: "Astral_Form")!
         
     ]
     
     var abilitiesBreach = [
         
-        UIImage(named: "Aftershock"),
-        UIImage(named: "Flashpoint"),
-        UIImage(named: "Fault_Line"),
-        UIImage(named: "Rolling_Thunder")
+        UIImage(named: "Aftershock")!,
+        UIImage(named: "Flashpoint")!,
+        UIImage(named: "Fault_Line")!,
+        UIImage(named: "Rolling_Thunder")!
     ]
     
     var abilitiesBrimstone = [
         
-        UIImage(named: "Incendiary"),
-        UIImage(named: "Stim_Beacon"),
-        UIImage(named: "Sky_Smoke"),
-        UIImage(named: "Orbital Strike")
+        UIImage(named: "Incendiary")!,
+        UIImage(named: "Stim_Beacon")!,
+        UIImage(named: "Sky_Smoke")!,
+        UIImage(named: "Orbital Strike")!
     ]
     
     var abilitiesChamber = [
         
-        UIImage(named: "Trademark"),
-        UIImage(named: "Headhunter"),
-        UIImage(named: "Rendezvous"),
-        UIImage(named: "Tour_De_France")
+        UIImage(named: "Trademark")!,
+        UIImage(named: "Headhunter")!,
+        UIImage(named: "Rendezvous")!,
+        UIImage(named: "Tour_De_Force")!
                         
     ]
     var abilitiesCypher = [
         
-        UIImage(named: "Trapwire"),
-        UIImage(named: "Cyber_Cage"),
-        UIImage(named: "Spycam"),
-        UIImage(named: "Neural_Theft")
+        UIImage(named: "Trapwire")!,
+        UIImage(named: "Cyber_Cage")!,
+        UIImage(named: "Spycam")!,
+        UIImage(named: "Neural_Theft")!
         
     ]
     var abilitiesFade = [
         
-        UIImage(named: "Prowler"),
-        UIImage(named: "Seize"),
-        UIImage(named: "Haunt"),
-        UIImage(named: "Nightfall")
+        UIImage(named: "Prowler")!,
+        UIImage(named: "Seize")!,
+        UIImage(named: "Haunt")!,
+        UIImage(named: "Nightfall")!
         
     ]
     var abilitiesJett = [
         
-        UIImage(named: "Cloudburst"),
-        UIImage(named: "Updraft"),
-        UIImage(named: "Tailwind"),
-        UIImage(named: "Blade_Storm")
+        UIImage(named: "Cloudburst")!,
+        UIImage(named: "Updraft")!,
+        UIImage(named: "Tailwind")!,
+        UIImage(named: "Blade_Storm")!
         
     ]
     var abilitiesKayo = [
         
-        UIImage(named: "FRAG-ment"),
-        UIImage(named: "FLASH-drive"),
-        UIImage(named: "ZERO-point"),
-        UIImage(named: "NULL-cmd")
+        UIImage(named: "FRAG-ment")!,
+        UIImage(named: "FLASH-drive")!,
+        UIImage(named: "ZERO-point")!,
+        UIImage(named: "NULL-cmd")!
         
     ]
     var abilitiesKilljoy = [
         
-        UIImage(named: "Alarmbot"),
-        UIImage(named: "Nanoswarm"),
-        UIImage(named: "Turret"),
-        UIImage(named: "Lockdown")
+        UIImage(named: "Alarmbot")!,
+        UIImage(named: "Nanoswarm")!,
+        UIImage(named: "Turret")!,
+        UIImage(named: "Lockdown")!
         
     ]
     var abilitiesNeon = [
         
-        UIImage(named: "Fast_Lane"),
-        UIImage(named: "Relay_Bolt"),
-        UIImage(named: "High_Gear"),
-        UIImage(named: "Overdrive")
+        UIImage(named: "Fast_Lane")!,
+        UIImage(named: "Relay_Bolt")!,
+        UIImage(named: "High_Gear")!,
+        UIImage(named: "Overdrive")!
         
     ]
     var abilitiesOmen = [
         
-        UIImage(named: "Shrouded_Step"),
-        UIImage(named: "Paranoia"),
-        UIImage(named: "Dark_Cover"),
-        UIImage(named: "From_the_Shadows")
+        UIImage(named: "Shrouded_Step")!,
+        UIImage(named: "Paranoia")!,
+        UIImage(named: "Dark_Cover")!,
+        UIImage(named: "From_the_Shadows")!
         
     ]
     var abilitiesPhoenix = [
         
-        UIImage(named: "Blaze"),
-        UIImage(named: "Curveball"),
-        UIImage(named: "Hot_Hands"),
-        UIImage(named: "Run_it_Back")
+        UIImage(named: "Blaze")!,
+        UIImage(named: "Curveball")!,
+        UIImage(named: "Hot_Hands")!,
+        UIImage(named: "Run_it_Back")!
         
     ]
     var abilitiesRaze = [
         
-        UIImage(named: "Boom_Bot"),
-        UIImage(named: "Blast_Pack"),
-        UIImage(named: "Paint_Shells"),
-        UIImage(named: "Showstopper")
+        UIImage(named: "Boom_Bot")!,
+        UIImage(named: "Blast_Pack")!,
+        UIImage(named: "Paint_Shells")!,
+        UIImage(named: "Showstopper")!
         
     ]
     var abilitiesReyna = [
         
-        UIImage(named: "Leer"),
-        UIImage(named: "Devour"),
-        UIImage(named: "Dismiss"),
-        UIImage(named: "Empress")
+        UIImage(named: "Leer")!,
+        UIImage(named: "Devour")!,
+        UIImage(named: "Dismiss")!,
+        UIImage(named: "Empress")!
         
     ]
     var abilitiesSage = [
         
-        UIImage(named: "Barrier_Orb"),
-        UIImage(named: "Slow_Orb"),
-        UIImage(named: "Healing_Orb"),
-        UIImage(named: "Resurrection")
+        UIImage(named: "Barrier_Orb")!,
+        UIImage(named: "Slow_Orb")!,
+        UIImage(named: "Healing_Orb")!,
+        UIImage(named: "Resurrection")!
         
     ]
     var abilitiesSkye = [
         
-        UIImage(named: "Regrowth"),
-        UIImage(named: "Trailblazer"),
-        UIImage(named: "Guiding_Light"),
-        UIImage(named: "Seekers")
+        UIImage(named: "Regrowth")!,
+        UIImage(named: "Trailblazer")!,
+        UIImage(named: "Guiding_Light")!,
+        UIImage(named: "Seekers")!
         
     ]
     var abilitiesViper = [
         
-        UIImage(named: "Snake_Bite"),
-        UIImage(named: "Poison_Cloud"),
-        UIImage(named: "Toxic_Screen"),
-        UIImage(named: "Viper's_Pit")
+        UIImage(named: "Snake_Bite")!,
+        UIImage(named: "Poison_Cloud")!,
+        UIImage(named: "Toxic_Screen")!,
+        UIImage(named: "Viper's_Pit")!
         
     ]
     var abilitiesYoru = [
         
-        UIImage(named: "Fakeout"),
-        UIImage(named: "Blindside"),
-        UIImage(named: "Gatecrash"),
-        UIImage(named: "Dimensional_Drift")
+        UIImage(named: "Fakeout")!,
+        UIImage(named: "Blindside")!,
+        UIImage(named: "Gatecrash")!,
+        UIImage(named: "Dimensional_Drift")!
         
     ]
     var abilitiesSova = [
         
-        UIImage(named: "Owl_Drone"),
-        UIImage(named: "Shock_Bolt"),
-        UIImage(named: "Recon_Bolt"),
-        UIImage(named: "Hunter's_Fury")
+        UIImage(named: "Owl_Drone")!,
+        UIImage(named: "Shock_Bolt")!,
+        UIImage(named: "Recon_Bolt")!,
+        UIImage(named: "Hunter's_Fury")!
         
     ]
     

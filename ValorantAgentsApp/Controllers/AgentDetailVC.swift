@@ -36,7 +36,7 @@ class AgentDetailVC: UIViewController {
         typeLabel.text = agentDetailVariables.choosenAgentType
         title = agentDetailVariables.choosenAgentName
         tableView.rowHeight = 65
-        tableView.separatorStyle = .singleLine
+        tableView.separatorStyle = .none
         agentTypeImageView.image = UIImage(named: "\(agentDetailVariables.choosenAgentType)")
         print(agentDetailVariables.choosenAgentType)
         
@@ -55,9 +55,16 @@ extension AgentDetailVC : UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! AgentDetailsCellVC
         let agent = choosenAgentAbilities[indexPath.row]
+        let skillImages = agentDetailVariables.choosenAgentAbilitiesImages[indexPath.row]
         cell.skillNameLabel.text = agent
+        cell.skillImageView.image = skillImages
+
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
    
     

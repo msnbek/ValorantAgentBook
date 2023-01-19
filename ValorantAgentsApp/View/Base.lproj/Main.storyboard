@@ -94,7 +94,7 @@
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QL9-r5-u41">
                                 <rect key="frame" x="0.0" y="424" width="390" height="420"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell2" rowHeight="71" id="kiq-fD-aso" customClass="AgentDetailsCellVC" customModule="ValorantAgentsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="71"/>
@@ -112,7 +112,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qe9-y1-aCb">
                                                     <rect key="frame" x="87" y="5" width="229" height="60"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.96862745100000003" green="0.93067711230000005" blue="0.94028543330000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -126,6 +126,7 @@
                                                 <constraint firstItem="qe9-y1-aCb" firstAttribute="top" secondItem="yOf-EL-Y8o" secondAttribute="topMargin" constant="-6" id="scD-pe-p3X"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="skillImageView" destination="sN5-WZ-VgS" id="jiX-Zy-nH4"/>
                                             <outlet property="skillNameLabel" destination="qe9-y1-aCb" id="njh-sy-gsS"/>
