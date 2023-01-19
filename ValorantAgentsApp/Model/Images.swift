@@ -30,6 +30,8 @@ struct AgentIconImages {
    var iconViper = UIImage(named: "Viper_Icon")
    var iconYoru = UIImage(named: "Yoru_Icon")
    var iconSova = UIImage(named: "Sova_Icon")
+    
+    
     init(iconAstra: UIImage = UIImage(named: "Astra_Icon")!,
          iconBreach: UIImage = UIImage(named: "Breach_Icon")!,
          iconBrimstone: UIImage = UIImage(named: "Brimstone_Icon")!,
@@ -49,7 +51,9 @@ struct AgentIconImages {
          iconViper: UIImage = UIImage(named: "Viper_Icon")!,
          iconYoru: UIImage = UIImage(named: "Yoru_Icon")!,
          iconSova: UIImage = UIImage(named: "Sova_Icon")!
+         
     )
+    
     {
         self.iconAstra = iconAstra
         self.iconBreach = iconBreach
@@ -70,10 +74,9 @@ struct AgentIconImages {
         self.iconViper = iconViper
         self.iconYoru = iconYoru
         self.iconSova = iconSova
+        
     }
-    
-    
-
+  
 }
 
 
@@ -81,7 +84,6 @@ struct AgentIconImages {
 
 struct AgentFlagImages {
     
- 
    var flagAstra = UIImage(named: "Ghana")
    var flagBreach = UIImage(named: "Sweden")
    var flagBrimstone = UIImage(named: "United_States")
@@ -102,6 +104,7 @@ struct AgentFlagImages {
    var flagYoru = UIImage(named: "Japan")
    var flagSova = UIImage(named: "Russia")
     
+    
     init(flagAstra: UIImage = UIImage(named: "Ghana")!,
          flagBreach: UIImage = UIImage(named: "Sweden")!,
          flagBrimstone: UIImage = UIImage(named: "United_States")!,
@@ -121,7 +124,9 @@ struct AgentFlagImages {
          flagViper: UIImage = UIImage(named: "United_States")!,
          flagYoru: UIImage = UIImage(named: "Japan")!,
          flagSova: UIImage = UIImage(named: "Russia")!
+         
     )
+    
     {
         self.flagAstra = flagAstra
         self.flagBreach = flagBreach
@@ -142,12 +147,13 @@ struct AgentFlagImages {
         self.flagViper = flagViper
         self.flagYoru = flagYoru
         self.flagSova = flagSova
+        
     }
   
     
 }
 
-
+//MARK: - Agent Abilities Flags
 struct AgentAbilitiesImages {
     
     var abilitiesAstra = [

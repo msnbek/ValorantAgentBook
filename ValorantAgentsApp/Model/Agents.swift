@@ -81,10 +81,11 @@ static var agentFlagImages = AgentFlagImages()
         Agent(name: "Jett", type: .duelist, origin: "South Korea", abilities: ["Cloudburst",
                                                                                "Updraft",
                                                                                "Tailwind",
-                                                                               "Blade Storm"],iconAgent:
-                agentIconImages.iconJett!, agentFlagImage:
-                agentFlagImages.flagJett!, agentAbilitiesImage:
-                agentAbilitiesImages.abilitiesJett),
+                                                                               "Blade Storm"],
+              iconAgent: agentIconImages.iconJett!,
+              agentFlagImage:
+                agentFlagImages.flagJett!,
+              agentAbilitiesImage:  agentAbilitiesImages.abilitiesJett),
        
         Agent(name: "Reyna", type: .duelist, origin: "Mexico", abilities: ["Leer",
                                                                            "Devour",
