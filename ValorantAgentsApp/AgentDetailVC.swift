@@ -14,44 +14,47 @@ class AgentDetailVC: UIViewController {
     @IBOutlet var flagImageView: UIImageView!
     @IBOutlet var tableView: UITableView!
     
-    var choosenFlagImage : UIImage?
-    var choosenAgentIconImage : UIImage?
-    var choosenAgentType = ""
-    var choosenAgentName = ""
-    var choosenAgentAbilities = [String]()
+    var agentDetailVariables = AgentDetailVariables()
     var agentsReference = ValorantReferenceApp().agents
+    var choosenAgentAbilities = [String]()
     
     override func viewDidLoad() {
+  
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         viewLoad()
-        print(choosenAgentAbilities)
+        
     }
     
+    
+//MARK: - ViewLoad Function.
     func viewLoad() {
         
-        flagImageView.image = choosenFlagImage
-        characterImageView.image = choosenAgentIconImage
-        typeLabel.text = choosenAgentType
-        title = choosenAgentName
+        flagImageView.image = agentDetailVariables.choosenFlagImage
+        characterImageView.image = agentDetailVariables.choosenAgentIconImage
+        typeLabel.text = agentDetailVariables.choosenAgentType
+        title = agentDetailVariables.choosenAgentName
+        tableView.rowHeight = 65
+        
     }
     
 
 }
 
+//MARK: - TableView Methods
 extension AgentDetailVC : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return choosenAgentAbilities.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! AgentDetailsCellVC
-      //  let agent = agentsReference[indexPath.row]
-     //   cell.skillNameLabel.text = choosenAgentAbilities[0]
-       
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! AgentDetailsCellVC
+        let agent = choosenAgentAbilities[indexPath.row]
+        cell.skillNameLabel.text = agent
         return cell
+        
     }
    
     

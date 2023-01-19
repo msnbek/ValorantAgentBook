@@ -19,6 +19,7 @@
 		ED6A3C88296C8383009D28D4 /* Agents.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C87296C8383009D28D4 /* Agents.swift */; };
 		ED6A3C8A296C849F009D28D4 /* AgentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */; };
 		ED6A3C8C296C9691009D28D4 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A3C8B296C9691009D28D4 /* Images.swift */; };
+		EDE0551B29796480000C7C24 /* AgentDetailVariableFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE0551A29796480000C7C24 /* AgentDetailVariableFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ED6A3C87296C8383009D28D4 /* Agents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agents.swift; sourceTree = "<group>"; };
 		ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailVC.swift; sourceTree = "<group>"; };
 		ED6A3C8B296C9691009D28D4 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		EDE0551A29796480000C7C24 /* AgentDetailVariableFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentDetailVariableFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				ED6A3C76296C7D1B009D28D4 /* Assets.xcassets */,
 				ED6A3C78296C7D1B009D28D4 /* LaunchScreen.storyboard */,
 				ED6A3C7B296C7D1B009D28D4 /* Info.plist */,
+				EDE0551A29796480000C7C24 /* AgentDetailVariableFile.swift */,
 			);
 			path = ValorantAgentsApp;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				ED6A3C86296C835E009D28D4 /* AgentProperties.swift in Sources */,
 				ED6A3C8C296C9691009D28D4 /* Images.swift in Sources */,
 				ED6A3C6E296C7D19009D28D4 /* AppDelegate.swift in Sources */,
+				EDE0551B29796480000C7C24 /* AgentDetailVariableFile.swift in Sources */,
 				ED6A3C88296C8383009D28D4 /* Agents.swift in Sources */,
 				ED6A3C84296C8036009D28D4 /* AgentDetailsCellVC.swift in Sources */,
 				ED6A3C70296C7D19009D28D4 /* SceneDelegate.swift in Sources */,

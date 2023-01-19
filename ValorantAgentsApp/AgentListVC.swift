@@ -10,13 +10,14 @@ import UIKit
 class AgentListVC: UIViewController {
     
     var agentsReference = ValorantReferenceApp().agents
+ 
     
-    
-
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
+        
         self.tableView.rowHeight = 100
+        // tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         super.viewDidLoad()
@@ -59,30 +60,25 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
     
         performSegue(withIdentifier: "toSecondVC", sender: nil)
         
-        
     }
     
-    
+    //MARK: - Prepare Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let destinationVC = segue.destination as! AgentDetailVC
         if let indexPath = tableView.indexPathForSelectedRow {
             let agent = agentsReference[indexPath.row]
-            destinationVC.choosenFlagImage = agent.agentFlagImage
-            destinationVC.choosenAgentIconImage = agent.iconAgent
-            destinationVC.choosenAgentType = agent.type.rawValue
-            destinationVC.choosenAgentName = agent.name
+            destinationVC.agentDetailVariables.choosenFlagImage = agent.agentFlagImage
+            destinationVC.agentDetailVariables.choosenAgentIconImage = agent.iconAgent
+            destinationVC.agentDetailVariables.choosenAgentType = agent.type.rawValue
+            destinationVC.agentDetailVariables.choosenAgentName = agent.name
             destinationVC.choosenAgentAbilities = agent.abilities
         }
     
         
     }
 
-    
-   
-    
-    
-    
+
   
 
 }

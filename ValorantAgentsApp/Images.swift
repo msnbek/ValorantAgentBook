@@ -10,7 +10,7 @@ import UIKit
 
 struct Images {
     
-    
+    //MARK: - Agent Icons
    var iconAstra = UIImage(named: "Astra_Icon")
    var iconBreach = UIImage(named: "Breach_Icon")
    var iconBrimstone = UIImage(named: "Brimstone_Icon")
