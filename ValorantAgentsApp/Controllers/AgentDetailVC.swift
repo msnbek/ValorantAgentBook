@@ -13,7 +13,7 @@ class AgentDetailVC: UIViewController {
     @IBOutlet var characterImageView: UIImageView!
     @IBOutlet var flagImageView: UIImageView!
     @IBOutlet var tableView: UITableView!
-    
+    @IBOutlet var agentTypeImageView: UIImageView!
     var agentDetailVariables = AgentDetailVariables()
     var agentsReference = ValorantReferenceApp().agents
     var choosenAgentAbilities = [String]()
@@ -36,6 +36,9 @@ class AgentDetailVC: UIViewController {
         typeLabel.text = agentDetailVariables.choosenAgentType
         title = agentDetailVariables.choosenAgentName
         tableView.rowHeight = 65
+        tableView.separatorStyle = .singleLine
+        agentTypeImageView.image = UIImage(named: "\(agentDetailVariables.choosenAgentType)")
+        print(agentDetailVariables.choosenAgentType)
         
     }
     

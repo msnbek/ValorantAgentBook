@@ -133,37 +133,45 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-FO-Gp7">
-                                <rect key="frame" x="89" y="355" width="212" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="RHg-bg-iAw"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-FO-Gp7">
+                                <rect key="frame" x="158" y="355" width="148" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.021991664229999999" blue="0.4877774446" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Controller" translatesAutoresizingMaskIntoConstraints="NO" id="vKo-My-ee7">
+                                <rect key="frame" x="115" y="355" width="55" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="M1U-1T-KTE"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="soM-LL-Z6t"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Zgs-sq-koJ" firstAttribute="centerX" secondItem="ylu-uJ-Qf7" secondAttribute="centerX" id="25R-F3-5td"/>
                             <constraint firstItem="Zgs-sq-koJ" firstAttribute="leading" secondItem="soM-LL-Z6t" secondAttribute="leading" id="3Fg-hS-xni"/>
-                            <constraint firstItem="KvT-FO-Gp7" firstAttribute="leading" secondItem="soM-LL-Z6t" secondAttribute="leading" constant="89" id="Afm-bI-NwF"/>
+                            <constraint firstItem="vKo-My-ee7" firstAttribute="top" secondItem="ylu-uJ-Qf7" secondAttribute="bottom" constant="8" id="5Om-vj-S1P"/>
                             <constraint firstItem="ylu-uJ-Qf7" firstAttribute="leading" secondItem="soM-LL-Z6t" secondAttribute="leading" constant="115" id="AwU-8M-JJa"/>
                             <constraint firstItem="Zgs-sq-koJ" firstAttribute="top" secondItem="soM-LL-Z6t" secondAttribute="top" id="BVT-fZ-1zR"/>
-                            <constraint firstItem="KvT-FO-Gp7" firstAttribute="top" secondItem="ylu-uJ-Qf7" secondAttribute="bottom" constant="8" id="Ghx-UK-S0e"/>
+                            <constraint firstItem="KvT-FO-Gp7" firstAttribute="centerX" secondItem="ylu-uJ-Qf7" secondAttribute="centerX" constant="36.5" id="Ewk-fd-88H"/>
                             <constraint firstItem="Zgs-sq-koJ" firstAttribute="leading" secondItem="QL9-r5-u41" secondAttribute="leading" id="H1N-ga-QEm"/>
                             <constraint firstItem="Zgs-sq-koJ" firstAttribute="trailing" secondItem="QL9-r5-u41" secondAttribute="trailing" id="M3g-xp-Vz3"/>
                             <constraint firstItem="Zgs-sq-koJ" firstAttribute="centerX" secondItem="WLb-Cs-beF" secondAttribute="centerX" id="WFr-IK-C8L"/>
-                            <constraint firstItem="KvT-FO-Gp7" firstAttribute="top" secondItem="Zgs-sq-koJ" secondAttribute="bottom" constant="63" id="aAB-RI-ADE"/>
-                            <constraint firstItem="QL9-r5-u41" firstAttribute="top" secondItem="KvT-FO-Gp7" secondAttribute="bottom" constant="22" id="cyO-QL-Ujb"/>
-                            <constraint firstItem="ylu-uJ-Qf7" firstAttribute="centerX" secondItem="KvT-FO-Gp7" secondAttribute="centerX" id="mzo-9g-KqY"/>
+                            <constraint firstItem="vKo-My-ee7" firstAttribute="bottom" secondItem="KvT-FO-Gp7" secondAttribute="bottom" id="YDr-WB-f3q"/>
+                            <constraint firstItem="QL9-r5-u41" firstAttribute="top" secondItem="vKo-My-ee7" secondAttribute="bottom" constant="22" id="YrA-WM-s3n"/>
+                            <constraint firstItem="KvT-FO-Gp7" firstAttribute="leading" secondItem="vKo-My-ee7" secondAttribute="trailing" constant="-12" id="c58-dc-hir"/>
+                            <constraint firstItem="vKo-My-ee7" firstAttribute="top" secondItem="KvT-FO-Gp7" secondAttribute="top" id="chi-2t-0UV"/>
+                            <constraint firstItem="KvT-FO-Gp7" firstAttribute="top" secondItem="Zgs-sq-koJ" secondAttribute="bottom" constant="63" id="dpc-PL-Ftv"/>
+                            <constraint firstItem="soM-LL-Z6t" firstAttribute="trailing" secondItem="KvT-FO-Gp7" secondAttribute="trailing" constant="84" id="mPu-md-nrP"/>
                             <constraint firstAttribute="bottomMargin" secondItem="QL9-r5-u41" secondAttribute="bottom" constant="-34" id="n1r-RN-MZQ"/>
+                            <constraint firstItem="vKo-My-ee7" firstAttribute="leading" secondItem="soM-LL-Z6t" secondAttribute="leading" constant="115" id="sXI-uJ-kZk"/>
                             <constraint firstItem="ylu-uJ-Qf7" firstAttribute="top" secondItem="soM-LL-Z6t" secondAttribute="top" constant="108" id="wpf-uZ-T90"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Agent Name" id="Y9d-HL-1hS"/>
                     <connections>
+                        <outlet property="agentTypeImageView" destination="vKo-My-ee7" id="KEq-fO-3gN"/>
                         <outlet property="characterImageView" destination="ylu-uJ-Qf7" id="PiB-Ay-Fog"/>
                         <outlet property="flagImageView" destination="Zgs-sq-koJ" id="CrN-LQ-zKr"/>
                         <outlet property="tableView" destination="QL9-r5-u41" id="ZYi-uh-xLH"/>
@@ -202,6 +210,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Controller" width="150" height="150"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

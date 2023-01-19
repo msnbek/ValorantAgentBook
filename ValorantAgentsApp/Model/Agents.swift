@@ -8,7 +8,9 @@
 import UIKit
 
 struct ValorantReferenceApp {
-  static var images = Images()
+    
+static var agentIconImages = AgentIconImages()
+static var agentFlagImages = AgentFlagImages()
     var agents: [Agent] =  [
         
         Agent(name: "Brimstone",
@@ -18,8 +20,8 @@ struct ValorantReferenceApp {
                          "Stim Beacon",
                           "Sky Smoke",
                           "Orbital Strike"],
-              iconAgent: images.iconBrimstone!,
-              agentFlagImage: UIImage(named: "United_States")!),
+              iconAgent: agentIconImages.iconBrimstone!,
+              agentFlagImage: agentFlagImages.flagBrimstone!),
        
         Agent(name: "Viper",
               type: .controller,
@@ -28,8 +30,8 @@ struct ValorantReferenceApp {
                          "Poison Cloud",
                           "Toxic Screen",
                          "Viper's Pit"],
-              iconAgent: images.iconViper!,
-              agentFlagImage: UIImage(named: "United_States")!),
+              iconAgent: agentIconImages.iconViper!,
+              agentFlagImage: agentFlagImages.flagViper!),
        
         Agent(name: "Omen",
               type: .controller,
@@ -38,88 +40,88 @@ struct ValorantReferenceApp {
                          "Paranoia",
                          "Dark Cover",
                         "From the Shadows"],
-              iconAgent: images.iconOmen!,
-              agentFlagImage: UIImage(named: "Unknown")!),
+              iconAgent: agentIconImages.iconOmen!,
+              agentFlagImage: agentFlagImages.flagOmen!),
        
         Agent(name: "Killjoy", type: .sentinel, origin: "Germany", abilities: ["Alarmbot",
                                                                                "Nanoswarm",
                                                                                "Turret",
-                                                                               "Lockdown"], iconAgent: images.iconKilljoy!, agentFlagImage: UIImage(named: "Germany")!),
+                                                                               "Lockdown"], iconAgent: agentIconImages.iconKilljoy!, agentFlagImage: agentFlagImages.flagKilljoy!),
        
         Agent(name: "Cypher", type: .sentinel, origin: "Morocco", abilities: ["Trapwire",
                                                                               "Cyber Cage",
                                                                               "Spycam",
-                                                                              "Neural Theft"],iconAgent: images.iconCypher!, agentFlagImage: UIImage(named: "Morocco")!),
+                                                                              "Neural Theft"],iconAgent: agentIconImages.iconCypher!, agentFlagImage: agentFlagImages.flagCypher!),
        
         Agent(name: "Sova", type: .initiator, origin: "Russia", abilities: ["Owl Drone",
                                                                             "Shock Bolt",
                                                                             "Recon Bolt",
-                                                                            "Hunter's Fury"],iconAgent: images.iconSova!, agentFlagImage: UIImage(named: "Russia")!),
+                                                                            "Hunter's Fury"],iconAgent: agentIconImages.iconSova!, agentFlagImage: agentFlagImages.flagSova!),
        
         Agent(name: "Sage", type: .sentinel, origin: "China", abilities: ["Barrier Orb",
                                                                           "Slow Orb",
                                                                           "Healing Orb",
-                                                                          "Resurrection"],iconAgent: images.iconSage!, agentFlagImage: UIImage(named: "China")!),
+                                                                          "Resurrection"],iconAgent: agentIconImages.iconSage!, agentFlagImage: agentFlagImages.flagSage!),
        
         Agent(name: "Phoenix", type: .duelist, origin: "United Kingdom", abilities: ["Blaze",
                                                                                      "Curveball",
                                                                                      "Hot Hands",
-                                                                                     "Run it Back"],iconAgent: images.iconPhoenix!, agentFlagImage: UIImage(named: "United_Kingdom")!),
+                                                                                     "Run it Back"],iconAgent: agentIconImages.iconPhoenix!, agentFlagImage: agentFlagImages.flagPhoenix!),
        
         Agent(name: "Jett", type: .duelist, origin: "South Korea", abilities: ["Cloudburst",
                                                                                "Updraft",
                                                                                "Tailwind",
-                                                                               "Blade Storm"],iconAgent: images.iconJett!, agentFlagImage: UIImage(named: "South_Korea")!),
+                                                                               "Blade Storm"],iconAgent: agentIconImages.iconJett!, agentFlagImage: agentFlagImages.flagJett!),
        
         Agent(name: "Reyna", type: .duelist, origin: "Mexico", abilities: ["Leer",
                                                                            "Devour",
                                                                            "Dismiss",
-                                                                           "Empress"],iconAgent: images.iconReyna!, agentFlagImage: UIImage(named: "Mexico")!),
+                                                                           "Empress"],iconAgent: agentIconImages.iconReyna!, agentFlagImage: agentFlagImages.flagReyna!),
        
         Agent(name: "Raze", type: .duelist, origin: "Brazil", abilities: ["Boom Bot",
                                                                           "Blast Pack",
                                                                           "Paint Shells",
-                                                                          "Showstopper"],iconAgent: images.iconRaze!, agentFlagImage: UIImage(named: "Brazil")!),
+                                                                          "Showstopper"],iconAgent: agentIconImages.iconRaze!, agentFlagImage: agentFlagImages.flagRaze!),
        
         Agent(name: "Breach", type: .initiator, origin: "Sweden", abilities: ["Aftershock",
                                                                               "Flashpoint",
                                                                               "Fault Line",
-                                                                              "Rolling Thunder"],iconAgent: images.iconBreach!, agentFlagImage: UIImage(named: "Sweden")!),
+                                                                              "Rolling Thunder"],iconAgent: agentIconImages.iconBreach!, agentFlagImage: agentFlagImages.flagBreach!),
        
         Agent(name: "Skye", type: .initiator, origin: "Australia", abilities: ["Regrowth",
                                                                                "Trailblazer",
                                                                                "Guiding Light",
-                                                                               "Seekers"],iconAgent: images.iconSkye!, agentFlagImage: UIImage(named: "Australia")!),
+                                                                               "Seekers"],iconAgent: agentIconImages.iconSkye!, agentFlagImage: agentFlagImages.flagSkye!),
        
         Agent(name: "Yoru", type: .duelist, origin: "Japan", abilities: ["Fakeout",
                                                                          "Blindside",
                                                                          "Gatecrash",
-                                                                         "Dimensional Drift"],iconAgent: images.iconYoru!, agentFlagImage: UIImage(named: "Japan")!),
+                                                                         "Dimensional Drift"],iconAgent: agentIconImages.iconYoru!, agentFlagImage: agentFlagImages.flagYoru!),
         
         Agent(name: "Astra", type: .controller, origin: "Ghana", abilities: ["Gravity Well",
                                                                              "Nova Pulse",
                                                                              "Nebula/Dissipate",
-                                                                             "Astral Form"],iconAgent: images.iconAstra!, agentFlagImage: UIImage(named: "Ghana")!),
+                                                                             "Astral Form"],iconAgent: agentIconImages.iconAstra!, agentFlagImage: agentFlagImages.flagAstra!),
        
         Agent(name: "KAYO", type: .initiator, origin: "AT Earth", abilities: ["FRAG/ment",
                                                                               "FLASH/drive",
                                                                               "ZERO/point",
-                                                                              "NULL/cmd"],iconAgent: images.iconKayo!, agentFlagImage: UIImage(named: "kayoFlag")!),
+                                                                              "NULL/cmd"],iconAgent: agentIconImages.iconKayo!, agentFlagImage: agentFlagImages.flagKayo!),
        
         Agent(name: "Chamber", type: .sentinel, origin: "France", abilities: ["Trademark",
                                                                               "Headhunter",
                                                                               "Rendezvous",
-                                                                              "Tour De Force"],iconAgent: images.iconChamber!, agentFlagImage: UIImage(named: "France")!),
+                                                                              "Tour De Force"],iconAgent: agentIconImages.iconChamber!, agentFlagImage: agentFlagImages.flagChamber!),
        
         Agent(name: "Neon", type: .duelist, origin: "Philippines", abilities: ["Fast Lane",
                                                                                "Relay Bolt",
                                                                                "High Gear",
-                                                                               "Overdrive"],iconAgent: images.iconNeon!, agentFlagImage: UIImage(named: "Philippines")!),
+                                                                               "Overdrive"],iconAgent: agentIconImages.iconNeon!, agentFlagImage: agentFlagImages.flagNeon!),
        
         Agent(name: "Fade", type: .initiator, origin: "Turkey", abilities: ["Prowler",
                                                                             "Seize",
                                                                             "Haunt",
-                                                                            "Nightfall"],iconAgent: images.iconFade!, agentFlagImage: UIImage(named: "Turkey")!)
+                                                                            "Nightfall"],iconAgent: agentIconImages.iconFade!, agentFlagImage: agentFlagImages.flagFade!)
         
         
     ]

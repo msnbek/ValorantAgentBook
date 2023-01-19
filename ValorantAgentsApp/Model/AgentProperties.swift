@@ -17,6 +17,7 @@ struct Agent: Hashable{
     let abilities: [String]
     let iconAgent : UIImage
     let agentFlagImage : UIImage
+    let agentAbilitiesImage: [UIImage]
 }
 
 enum AgentType:String{

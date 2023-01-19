@@ -72,20 +72,52 @@
 			children = (
 				ED6A3C6D296C7D19009D28D4 /* AppDelegate.swift */,
 				ED6A3C6F296C7D19009D28D4 /* SceneDelegate.swift */,
+				EDE0551C29796CE7000C7C24 /* Controllers */,
+				EDE0551D29796CF1000C7C24 /* CellControllers */,
+				EDE0551E29796CFF000C7C24 /* Model */,
+				EDE0551F29796D0A000C7C24 /* View */,
+				ED6A3C7B296C7D1B009D28D4 /* Info.plist */,
+			);
+			path = ValorantAgentsApp;
+			sourceTree = "<group>";
+		};
+		EDE0551C29796CE7000C7C24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				ED6A3C71296C7D19009D28D4 /* AgentListVC.swift */,
-				ED6A3C81296C8023009D28D4 /* AgentCellVC.swift */,
 				ED6A3C89296C849E009D28D4 /* AgentDetailVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EDE0551D29796CF1000C7C24 /* CellControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A3C81296C8023009D28D4 /* AgentCellVC.swift */,
 				ED6A3C83296C8036009D28D4 /* AgentDetailsCellVC.swift */,
+			);
+			path = CellControllers;
+			sourceTree = "<group>";
+		};
+		EDE0551E29796CFF000C7C24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				ED6A3C85296C835E009D28D4 /* AgentProperties.swift */,
 				ED6A3C87296C8383009D28D4 /* Agents.swift */,
 				ED6A3C8B296C9691009D28D4 /* Images.swift */,
+				EDE0551A29796480000C7C24 /* AgentDetailVariableFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDE0551F29796D0A000C7C24 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				ED6A3C73296C7D19009D28D4 /* Main.storyboard */,
 				ED6A3C76296C7D1B009D28D4 /* Assets.xcassets */,
 				ED6A3C78296C7D1B009D28D4 /* LaunchScreen.storyboard */,
-				ED6A3C7B296C7D1B009D28D4 /* Info.plist */,
-				EDE0551A29796480000C7C24 /* AgentDetailVariableFile.swift */,
 			);
-			path = ValorantAgentsApp;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
