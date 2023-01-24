@@ -20,7 +20,14 @@ static var agentFlagImages = AgentFlagImages()
                                                                                           "Orbital Strike"],
               iconAgent: agentIconImages.iconBrimstone!,
               agentFlagImage: agentFlagImages.flagBrimstone!,
-              agentAbilitiesImage: agentAbilitiesImages.abilitiesBrimstone),
+              agentAbilitiesImage: agentAbilitiesImages.abilitiesBrimstone, skillAbilitiesLink:
+                
+                ["https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte2b9eb1923ef64fa/5ecad7d0f5bd13348a6cac75/Brimstone_Q_v001_web.mp4",
+                    "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltcf4359fed083686b/5ecad7d198f79d6925dbee07/Brimstone_E_v001_web.mp4",
+                    "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltc34c3d692ea83f41/5ecad7d0177c51692beb1fe4/Brimstone_C_v001_web.mp4",
+                    "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3d19d83ba51eb18f/5ecad7d297b46c1911ad1868/Brimstone_X_v001_web.mp4"
+                 
+                                                                                                ]),
        
         Agent(name: "Viper", type: .controller, origin: "United States", abilities: ["Snake Bite",
                                                                                      "Poison Cloud",
@@ -28,15 +35,29 @@ static var agentFlagImages = AgentFlagImages()
                                                                                      "Viper's Pit"],
               iconAgent: agentIconImages.iconViper!,
               agentFlagImage: agentFlagImages.flagViper!,
-              agentAbilitiesImage: agentAbilitiesImages.abilitiesViper),
+              agentAbilitiesImage: agentAbilitiesImages.abilitiesViper, skillAbilitiesLink: [
+                
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blte5200bab40679f96/5ecad8935e73766852c8ed94/Viper_Q_v001_web.mp4",
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt66a45c1fe76ca647/5ecad893957e405e0990575d/Viper_E_v001_web.mp4",
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5e70987e8ac2f2d6/5ecad893722d20585b2f4a4c/Viper_C_v001_web.mp4",
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt41c75111b2eac6b5/5ecad8923a450a58554b7078/Viper_X_v001_web.mp4"
+              
+              ]),
        
-        Agent(name: "Omen", type: .controller, origin: "Unknown", abilities: ["Shrouded Step",
-                                                                              "Paranoia",
+        Agent(name: "Omen", type: .controller, origin: "Unknown", abilities: ["Paranoia",
+                                                                              "Shrouded Step",
                                                                               "Dark Cover",
                                                                               "From the Shadows"],
               iconAgent: agentIconImages.iconOmen!,
               agentFlagImage: agentFlagImages.flagOmen!,
-              agentAbilitiesImage: agentAbilitiesImages.abilitiesOmen),
+              agentAbilitiesImage: agentAbilitiesImages.abilitiesOmen, skillAbilitiesLink: [
+                
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt5babc7e7c6c24fa0/5ecad8154a28e119db56229e/Omen_Q_v001_web.mp4",
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt63486e54ea52945a/5ecad815bab1845d392dfd07/Omen_C_v001_web.mp4",
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt70e2c9db1c0793df/5ecad815c846021917ecbb85/Omen_E_v001_web.mp4",
+              "https://assets.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt65aa85bf6ba5c0e8/5ecad814a4fe135d37f021a3/Omen_X_v001_web.mp4"
+              
+              ]),
        
         Agent(name: "Killjoy", type: .sentinel, origin: "Germany", abilities: ["Alarmbot",
                                                                                "Nanoswarm",
