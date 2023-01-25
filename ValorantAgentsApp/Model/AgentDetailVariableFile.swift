@@ -16,5 +16,5 @@ struct AgentDetailVariables {
     var choosenAgentName = ""
     var choosenAgentAbilities = [String]()
     var choosenAgentAbilitiesImages = [UIImage]()
-   
+    var choosenAgentVideoLink = [String]()
 }

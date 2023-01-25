@@ -17,6 +17,12 @@ class AgentDetailVC: UIViewController {
     var agentDetailVariables = AgentDetailVariables()
     var agentsReference = ValorantReferenceApp().agents
     var choosenAgentAbilities = [String]()
+    var viewController = AbilitiesDetailsViewController()
+    var choosenAgentVideoLink = [String]()
+   
+    
+    
+
     
     override func viewDidLoad() {
   
@@ -24,6 +30,7 @@ class AgentDetailVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         viewLoad()
+        print(choosenAgentVideoLink)
         
     }
     
@@ -38,7 +45,8 @@ class AgentDetailVC: UIViewController {
         tableView.rowHeight = 65
         tableView.separatorStyle = .none
         agentTypeImageView.image = UIImage(named: "\(agentDetailVariables.choosenAgentType)")
-        print(agentDetailVariables.choosenAgentType)
+       // print(agentDetailVariables.choosenAgentVideoLink)
+       
     }
     
 
@@ -53,17 +61,37 @@ extension AgentDetailVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell2", for: indexPath) as! AgentDetailsCellVC
-        let agent = choosenAgentAbilities[indexPath.row]
+        let agentAbilities = choosenAgentAbilities[indexPath.row]
         let skillImages = agentDetailVariables.choosenAgentAbilitiesImages[indexPath.row]
-        cell.skillNameLabel.text = agent
+      print(agentAbilities)
+    
+        cell.skillNameLabel.text = agentAbilities
         cell.skillImageView.image = skillImages
+ 
 
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+     
+        performSegue(withIdentifier: "toYoutubeVideos", sender: nil)
         tableView.deselectRow(at: indexPath, animated: true)
+      
+       
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toYoutubeVideos" {
+            let destinationVC = segue.destination as! AbilitiesDetailsViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                 let agent = agentsReference[indexPath.row]
+                let link = choosenAgentVideoLink[indexPath.row]
+                print(link)
+                destinationVC.agentAbilitiesVideoURL = link
+                destinationVC.choosenAgentSkillName = choosenAgentAbilities[indexPath.row]
+            }
+        }
+     
     }
    
     

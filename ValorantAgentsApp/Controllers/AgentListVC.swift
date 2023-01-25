@@ -59,6 +59,8 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
         performSegue(withIdentifier: "toSecondVC", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         
     }
     
@@ -74,6 +76,8 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
             destinationVC.agentDetailVariables.choosenAgentName = agent.name
             destinationVC.choosenAgentAbilities = agent.abilities
             destinationVC.agentDetailVariables.choosenAgentAbilitiesImages = agent.agentAbilitiesImage
+            destinationVC.choosenAgentVideoLink = agent.skillAbilitiesLink
+ 
         }
         
     }

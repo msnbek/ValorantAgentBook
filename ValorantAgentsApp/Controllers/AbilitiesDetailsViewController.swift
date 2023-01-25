@@ -17,13 +17,33 @@ class AbilitiesDetailsViewController: UIViewController, AVPlayerViewControllerDe
     @IBOutlet var skillDetailsLabel: UILabel!
     @IBOutlet var skillNameLabel: UILabel!
     @IBOutlet var heroIconImageView: UIImageView!
+    var agentAbilitiesVideoURL = ""
+    var choosenAgentSkillName = ""
  
     override func viewDidLoad() {
+       
+        skillNameLabel.text = choosenAgentSkillName
         super.viewDidLoad()
+    
         
-playAbilitiesVideos()
+//playAbilitiesVideos()
         
     }
+    @IBAction func playVideoUsingURL(_ sender: Any) {
+            playGlobalVideo()
+        }
+
+        func playGlobalVideo() {
+            guard let videoURL = URL(string: agentAbilitiesVideoURL) else {
+                return
+            }
+            let player = AVPlayer(url: videoURL)
+            let vc = AVPlayerViewController()
+            vc.player = player
+            present(vc, animated: true) {
+                player.play()
+            }
+        }
  
     
     func playAbilitiesVideos() {
@@ -34,6 +54,7 @@ playAbilitiesVideos()
                                        addChild(controller)
                 view.addSubview(controller.view)
         controller.view.frame = CGRect(x: 50 , y: 50, width: 300, height: 300)
+       
                 controller.player = player
                 controller.showsPlaybackControls = true
                 player.isClosedCaptionDisplayEnabled = false
