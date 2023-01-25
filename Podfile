@@ -6,5 +6,5 @@ target 'ValorantAgentsApp' do
   use_frameworks!
 
   # Pods for ValorantAgentsApp
-pod ‘YoutubePlayer-in-WKWebView’, “~> 0.2.0”
+
 end

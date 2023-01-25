@@ -158,7 +158,6 @@
 				ED6A3C66296C7D19009D28D4 /* Sources */,
 				ED6A3C67296C7D19009D28D4 /* Frameworks */,
 				ED6A3C68296C7D19009D28D4 /* Resources */,
-				4D5247E4B00386F0D8292C7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,23 +215,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D5247E4B00386F0D8292C7F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ValorantAgentsApp/Pods-ValorantAgentsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ValorantAgentsApp/Pods-ValorantAgentsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ValorantAgentsApp/Pods-ValorantAgentsApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CF4C8009FDB25582762B4F19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
