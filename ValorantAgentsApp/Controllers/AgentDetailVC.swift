@@ -86,9 +86,9 @@ extension AgentDetailVC : UITableViewDelegate, UITableViewDataSource {
             if let indexPath = tableView.indexPathForSelectedRow {
                  let agent = agentsReference[indexPath.row]
                 let link = choosenAgentVideoLink[indexPath.row]
-                print(link)
                 destinationVC.agentAbilitiesVideoURL = link
                 destinationVC.choosenAgentSkillName = choosenAgentAbilities[indexPath.row]
+                destinationVC.choosenAbilitiesImages = agentDetailVariables.choosenAgentAbilitiesImages[indexPath.row]
             }
         }
      

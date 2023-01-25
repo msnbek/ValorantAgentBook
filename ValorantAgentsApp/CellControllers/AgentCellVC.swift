@@ -17,6 +17,7 @@ class AgentCellVC: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         agentNameLAbel.font = .systemFont(ofSize: 25, weight: .semibold)
+        agentNameLAbel.textColor = .white
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

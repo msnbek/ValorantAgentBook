@@ -15,13 +15,15 @@ class AgentListVC: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
-        
+        self.tableView.backgroundColor = .black
+        navigationController?.navigationBar.backgroundColor = .black
         self.tableView.rowHeight = 100
         // tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         super.viewDidLoad()
      configureNavigationBar()
+        tableView.rowHeight = 150
         
     }
    
@@ -52,6 +54,8 @@ extension AgentListVC: UITableViewDelegate, UITableViewDataSource {
         let agent = agentsReference[indexPath.row]
         cell.agentNameLAbel.text = agent.name
         cell.agentImageview.image = agent.iconAgent
+        cell.agentNameLAbel.textColor = .white
+        cell.backgroundColor = .black
         return cell
         
     }
